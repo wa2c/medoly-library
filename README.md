@@ -22,7 +22,7 @@ Add followings to build.gradle.
 
 ## Licence
 
-MIT
+[MIT](https://bitbucket.org/wa2c/medoly-library/raw/517df9165aa19fe335046be0611d58ca135ff37a/LICENSE.txt)
 
 ## Author
 
