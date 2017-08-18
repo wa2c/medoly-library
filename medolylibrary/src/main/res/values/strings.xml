@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="media">Media</string>
+    <string name="album_art">Album Art</string>
+    <string name="lyrics">Lyrics</string>
+    <string name="queue">Queue</string>
+
+
+
+    <!-- Common Property -->
+    <string name="description">Description</string>
+    <string name="source_title">Source Name</string>
+    <string name="source_uri">Source URI</string>
+    <string name="mime_type">MIME Type</string>
+    <string name="folder_path">Folder Path</string>
+    <string name="file_name">File Name</string>
+    <string name="data_size">Data Size</string>
+    <string name="last_modified">Last Modified</string>
+    <string name="data_uri">URI</string>
+
+
+
+    <!-- Media Property -->
+    <string name="media_title">Title</string>
+    <string name="media_artist">Artist</string>
+    <string name="media_original_artist">Original Artist</string>
+    <string name="media_album_artist">Album Artist</string>
+    <string name="media_album">Album</string>
+    <string name="media_original_album">Original Album</string>
+
+    <string name="media_genre">Genre</string>
+    <string name="media_mood">Mood</string>
+    <string name="media_occasion">Occasion</string>
+
+    <string name="media_year">Year</string>
+    <string name="media_original_year">Original Year</string>
+
+    <string name="media_composer">Composer</string>
+    <string name="media_arranger">Arranger</string>
+    <string name="media_lyricist">Lyricist</string>
+    <string name="media_original_lyricist">Original Lyricist</string>
+    <string name="media_conductor">Conductor</string>
+    <string name="media_producer">Producer</string>
+    <string name="media_engineer">Engineer</string>
+    <string name="media_encoder">Encoder</string>
+    <string name="media_mixer">Mixer</string>
+    <string name="media_djmixer">DJ Mixer</string>
+    <string name="media_remixer">Remixer</string>
+    <string name="media_copyright">Copyright</string>
+    <string name="media_record_label">Record Label</string>
+
+    <string name="media_media">Media</string>
+    <string name="media_disc">Disc</string>
+    <string name="media_disc_total">Total Disc</string>
+    <string name="media_track">Track</string>
+    <string name="media_track_total">Total Track</string>
+
+    <string name="media_comment">Comment</string>
+
+    <string name="media_loop">Loop</string>
+    <string name="media_loop_start">Loop Start</string>
+    <string name="media_loop_length">Loop Length</string>
+    <string name="media_tempo">Tempo</string>
+    <string name="media_bpm">BPM</string>
+    <string name="media_fbpm">FBPM</string>
+
+    <string name="media_quality">Quality</string>
+    <string name="media_rating">Rating</string>
+
+    <string name="media_language">Language</string>
+    <string name="media_script">Script</string>
+
+    <string name="media_tags">Tags</string>
+    <string name="media_key">Key</string>
+
+    <string name="media_amazon_id">Amazon ID</string>
+    <string name="media_catalog_no">Catalog No</string>
+    <string name="media_isrc">ISRC</string>
+
+    <string name="media_url_official_release_site">Official Release Site URL</string>
+    <string name="media_url_official_artist_site">Official Artist Site URL</string>
+    <string name="media_url_lyrics_site">Lyrics Site URL</string>
+    <string name="media_url_wikipedia_release_site">Wikipedia Release Site URL</string>
+    <string name="media_url_wikipedia_artist_site">Wikipedia Artist Site URL</string>
+    <string name="media_url_discogs_release_site">Discogs Release Site URL</string>
+    <string name="media_url_discogs_artist_site">Discogs Artist Site URL</string>
+
+    <string name="media_musicbrainz_release_id">MusicBrainz Release ID</string>
+    <string name="media_musicbrainz_artist_id">MusicBrainz Artist ID</string>
+    <string name="media_musicbrainz_release_artist_id">MusicBrainz Release Artist ID</string>
+    <string name="media_musicbrainz_release_group_id">MusicBrainz Release Group ID</string>
+    <string name="media_musicbrainz_disc_id">MusicBrainz Disc ID</string>
+    <string name="media_musicbrainz_track_id">MusicBrainz Track ID</string>
+    <string name="media_musicbrainz_work_id">MusicBrainz Work ID</string>
+    <string name="media_musicbrainz_release_status">MusicBrainz Release Status</string>
+    <string name="media_musicbrainz_release_type">MusicBrainz Release Type</string>
+    <string name="media_musicbrainz_release_country">MusicBrainz Release Country</string>
+
+    <string name="media_musicip_id">MusicIP ID</string>
+
+    <string name="media_tag_type">Tag Type</string>
+    <string name="media_character_encoding">Character Encoding</string>
+    <string name="media_format">Media Format</string>
+    <string name="media_encoding_type">Media Codec</string>
+    <string name="media_bit_rate">Bit Rate</string>
+    <string name="media_sample_rate">Sample Rate</string>
+    <string name="media_channels">Audio Channel</string>
+    <string name="media_duration">Duration</string>
+
+
+
+    <!-- Album Art Property -->
+    <string name="album_art_resource_type">Resource Type</string>
+    <string name="album_art_picture_type">Picture Type</string>
+    <string name="album_art_resolution">Resolution</string>
+
+    <!-- Album Art Resource Type -->
+    <string name="album_art_resource_internal">Internal</string>
+    <string name="album_art_resource_external">External File</string>
+    <string name="album_art_resource_service">External Service</string>
+    <string name="album_art_resource_provider">Content Provider</string>
+
+
+
+    <!-- Lyrics Property -->
+    <string name="lyrics_lyrics">Lyrics</string>
+    <string name="lyrics_resource_type">Resource Type</string>
+    <string name="lyrics_format_type">Format Type</string>
+    <string name="lyrics_field_name">Field Name</string>
+    <string name="lyrics_sync_type">Sync Type</string>
+    <string name="lyrics_offset_time">Offset Time</string>
+    <string name="lyrics_character_encoding">Character Encoding</string>
+
+    <!-- Lyrics Resource Type -->
+    <string name="lyrics_resource_internal">Internal</string>
+    <string name="lyrics_resource_file">External File</string>
+    <string name="lyrics_resource_service">External Service</string>
+
+    <!-- Lyrics Sync Type -->
+    <string name="lyrics_sync_sync">Sync</string>
+    <string name="lyrics_sync_unsync">Unsync</string>
+
+    <!-- Lyrics Format Type -->
+    <string name="lyrics_format_text">Plain Text</string>
+    <string name="lyrics_format_lrc">LRC Format</string>
+    <string name="lyrics_format_kra">KRA Format</string>
+    <string name="lyrics_format_joyhack">JoyHack Format</string>
+    <string name="lyrics_format_srt">SRT (SubRip) Format</string>
+    <string name="lyrics_format_stl">STL (Spruce subtitle) Format</string>
+    <string name="lyrics_format_scc">SCC (Scenarist Closed Caption) Format</string>
+    <string name="lyrics_format_ass">SSA/ASS (SubStation Alpha) Format</string>
+    <string name="lyrics_format_ttml">TTML (Timed Text Markup Language) Format</string>
+    <string name="lyrics_format_lyrics">Lyrics Text</string>
+    <string name="lyrics_format_sylt">SYLT Format</string>
+    <string name="lyrics_format_mp3_lyrics3v1">MP3 Lyrics3 v1 Format</string>
+    <string name="lyrics_format_mp3_lyrics3v2">MP3 Lyrics3 v2 Format</string>
+
+    <!-- Queue Property -->
+    <string name="queue_current_position">Current Position</string>
+    <string name="queue_current_no">Current No</string>
+    <string name="queue_total_count">Total Count</string>
+    <string name="queue_played_count">Played Count</string>
+    <string name="queue_total_time">Total Time</string>
+    <string name="queue_played_time">Played Time</string>
+    <string name="queue_loop_count">Loop Count</string>
+
+    <!-- Plugin -->
+    <string name="label_plugin_operation_execute">Execute Action</string>
+    <string name="label_plugin_operation_media_open">Media Open</string>
+    <string name="label_plugin_operation_media_close">Media Close</string>
+    <string name="label_plugin_operation_play_start">Play Start</string>
+    <string name="label_plugin_operation_play_stop">Play Stop</string>
+    <string name="label_plugin_operation_play_now">Play Now</string>
+    <string name="label_plugin_operation_play_complete">Play Complete</string>
+
+    <string name="label_plugin_type_run">Run</string>
+    <string name="label_plugin_type_post_message">Post Message</string>
+    <string name="label_plugin_type_get_property">Get Property</string>
+    <string name="label_plugin_type_get_album_art">Get Album Art</string>
+    <string name="label_plugin_type_get_lyrics">Get Lyrixcs</string>
+
+</resources>
