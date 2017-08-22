@@ -20,9 +20,18 @@ Add followings to build.gradle.
         `compile 'com.wa2c.android:medolylibrary:1.1.0'`
     }
 
+## Sample
+
+See following projects.
+
+* [Medoly Last.fm Plugin](https://bitbucket.org/wa2c/medoly-last.fm-scrobbler-plugin)
+* [Medoly Twitter Plugin](https://bitbucket.org/wa2c/medoly-twitter-plugin)
+* [Medoly Lyrics Scraper Plugin](https://bitbucket.org/wa2c/medoly-lyrics-scraper-plugin)
+* [Medoly LRC Lyrics Plugin](https://bitbucket.org/wa2c/medoly-lrc-lyrics-plugin)
+
 ## Licence
 
-MIT
+[MIT](https://bitbucket.org/wa2c/medoly-library/raw/517df9165aa19fe335046be0611d58ca135ff37a/LICENSE.txt)
 
 ## Author
 
