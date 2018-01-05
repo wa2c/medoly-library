@@ -44,10 +44,8 @@ class PropertyDataTest {
                 val list: ArrayList<String?>? = null
                 put(MediaProperty.LYRICIST, list)
 
-                put(MediaProperty.DATA_URI, "file://localhost/test.mp3")
+                put(MediaProperty.DATA_URI, "http://localhost/test.mp3")
                 put(AlbumArtProperty.DATA_URI, "")
-
-
                 put(AlbumArtProperty.RESOURCE_TYPE, "EXTERNAL")
             }
         }
@@ -112,9 +110,9 @@ class PropertyDataTest {
     @Test
     @Throws(Exception::class)
     fun get() {
-        val `val` = propertyData[MediaProperty.TITLE]
-        assertNotNull(`val`)
-        assertTrue(`val` == object : ArrayList<String?>() {
+        val v = propertyData[MediaProperty.TITLE]
+        assertNotNull(v)
+        assertTrue(v == object : ArrayList<String?>() {
             init {
                 add("Title1")
                 add("Title2")
@@ -196,8 +194,8 @@ class PropertyDataTest {
     @Throws(Exception::class)
     fun insertFirst() {
         propertyData.insertFirst(MediaProperty.TITLE, "Title0")
-        val val1 = propertyData[MediaProperty.TITLE]
-        assertTrue(val1 == object : ArrayList<String?>() {
+        val v1 = propertyData[MediaProperty.TITLE]
+        assertTrue(v1 == object : ArrayList<String?>() {
             init {
                 add("Title0")
                 add("Title1")
@@ -206,8 +204,8 @@ class PropertyDataTest {
         })
 
         propertyData.insertFirst(MediaProperty.ARTIST, "Artist0")
-        val val2 = propertyData[MediaProperty.ARTIST]
-        assertTrue(val2 == object : ArrayList<String?>() {
+        val v2 = propertyData[MediaProperty.ARTIST]
+        assertTrue(v2 == object : ArrayList<String?>() {
             init {
                 add("Artist0")
                 add("Artist1")
@@ -257,7 +255,7 @@ class PropertyDataTest {
     @Test
     @Throws(Exception::class)
     fun getDataUri() {
-        assertTrue(Uri.parse("file://localhost/test.mp3") == propertyData.mediaUri)
+        assertTrue(Uri.parse("http://localhost/test.mp3") == propertyData.mediaUri)
         assertTrue(Uri.parse("") == propertyData.albumArtUri)
         assertTrue(propertyData.lyricsUri == null)
     }
@@ -317,9 +315,19 @@ class PropertyDataTest {
                 put(MediaProperty.COMPOSER.keyName, ArrayList())
                 val list: ArrayList<String?>? = null
                 put(MediaProperty.LYRICIST.keyName, list)
+
+                put(MediaProperty.DATA_URI.keyName, object : ArrayList<String?>() { init { add("http://localhost/test.mp3") } })
+                put(AlbumArtProperty.DATA_URI.keyName, object : ArrayList<String?>() { init { add("") } })
+                put(AlbumArtProperty.RESOURCE_TYPE.keyName, object : ArrayList<String?>() { init { add("EXTERNAL") } })
             }
         }
         assertTrue(propertyData.equals(map))
     }
 
+    @Test
+    @Throws(Exception::class)
+    fun clone() {
+        assertTrue(propertyData == propertyData.clone())
+        assertFalse(propertyData === propertyData.clone())
+    }
 }

@@ -78,8 +78,6 @@ class MediaPluginIntent : Intent {
             this.putExtra(PLUGIN_ACTION_LABEL, label)
         }
 
-    var actionPriority2: Int? = null
-
     /**
      * A action priority.
      */

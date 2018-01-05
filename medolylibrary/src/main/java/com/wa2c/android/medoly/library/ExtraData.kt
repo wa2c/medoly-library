@@ -67,7 +67,8 @@ open class ExtraData : LinkedHashMap<String?, MutableList<String?>?> {
      * @return true if this map contains no key-value mappings.
      */
     fun isEmpty(key: String?): Boolean {
-        return this[key]?.isEmpty() ?: false
+        val list = this[key]
+        return (list == null || list.isEmpty())
     }
 
     /**
@@ -76,7 +77,7 @@ open class ExtraData : LinkedHashMap<String?, MutableList<String?>?> {
      * @return The first property value.
      */
     fun getFirst(key: String?): String? {
-         val list = this[key]
+        val list = this[key]
         return if (list == null || list.isEmpty()) null else list[0]
     }
 

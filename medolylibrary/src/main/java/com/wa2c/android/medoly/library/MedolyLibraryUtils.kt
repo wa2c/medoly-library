@@ -12,11 +12,11 @@ object MedolyLibraryUtils {
      * @param keyName A key name.
      * @return The property.
      */
-    fun getKeyProperty(keyName: String): IProperty {
+    fun getKeyProperty(keyName: String): IProperty? {
         var p: IProperty? = MediaProperty.valueOfKey(keyName)
         if (p == null) p = AlbumArtProperty.valueOfKey(keyName)
         if (p == null) p = LyricsProperty.valueOfKey(keyName)
-        if (p == null) p = QueueProperty.valueOf(keyName)
+        if (p == null) p = QueueProperty.valueOfKey(keyName)
         return p
     }
 

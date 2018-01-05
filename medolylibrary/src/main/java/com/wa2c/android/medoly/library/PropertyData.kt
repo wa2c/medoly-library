@@ -1,7 +1,6 @@
 package com.wa2c.android.medoly.library
 
 import android.net.Uri
-import android.text.TextUtils
 
 /**
  * Property data.
@@ -15,7 +14,7 @@ open class PropertyData : ExtraData {
     val mediaUri: Uri?
         get() {
             val url = this.getFirst(MediaProperty.DATA_URI)
-            if (TextUtils.isEmpty(url))
+            if (url.isNullOrEmpty())
                 return null
             return try {
                 Uri.parse(url)
@@ -32,7 +31,7 @@ open class PropertyData : ExtraData {
     val albumArtUri: Uri?
         get() {
             val url = this.getFirst(AlbumArtProperty.DATA_URI)
-            if (TextUtils.isEmpty(url))
+            if (url.isNullOrEmpty())
                 return null
             return try {
                 Uri.parse(url)
@@ -49,7 +48,7 @@ open class PropertyData : ExtraData {
     val lyricsUri: Uri?
         get() {
             val url = this.getFirst(LyricsProperty.DATA_URI)
-            if (TextUtils.isEmpty(url))
+            if (url.isNullOrEmpty())
                 return null
             return try {
                 Uri.parse(url)
@@ -64,21 +63,21 @@ open class PropertyData : ExtraData {
      * @return true if this map has no media data.
      */
     val isMediaEmpty: Boolean
-        get() = TextUtils.isEmpty(this.getFirst(MediaProperty.DATA_URI))
+        get() = this.getFirst(MediaProperty.DATA_URI).isNullOrEmpty()
 
     /**
      * Returns true if this property has album art data.
      * @return true if this map has no album art data.
      */
     val isAlbumArtEmpty: Boolean
-        get() = TextUtils.isEmpty(this.getFirst(AlbumArtProperty.RESOURCE_TYPE))
+        get() = this.getFirst(AlbumArtProperty.RESOURCE_TYPE).isNullOrEmpty()
 
     /**
      * Returns true if this property has lyrics data.
      * @return true if this map has no lyrics data.
      */
     val isLyricsEmpty: Boolean
-        get() = TextUtils.isEmpty(this.getFirst(LyricsProperty.RESOURCE_TYPE))
+        get() = this.getFirst(LyricsProperty.RESOURCE_TYPE).isNullOrEmpty()
 
     /**
      * Constructor.

@@ -13,6 +13,9 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
+import org.robolectric.Robolectric
+import org.robolectric.RuntimeEnvironment
+import org.robolectric.annotation.Config
 
 /**
  * Media action plugin intent test.
@@ -27,10 +30,10 @@ class MediaPluginIntentTest {
     private val actionId = String.format(Locale.getDefault(), "%03d", 0) + "_" + System.nanoTime()
     private val actionPriority = 100
 
-
     @Before
     @Throws(Exception::class)
     fun setUp() {
+
         propertyData = object : PropertyData() {
             init {
                 put(MediaProperty.TITLE, object : ArrayList<String?>() {
