@@ -17,7 +17,7 @@ Add followings to build.gradle.
     }
 
     dependencies {
-        `compile 'com.wa2c.android:medolylibrary:1.1.0'`
+        `compile 'com.wa2c.android:medolylibrary:1.2.0'`
     }
 
 ## Sample
