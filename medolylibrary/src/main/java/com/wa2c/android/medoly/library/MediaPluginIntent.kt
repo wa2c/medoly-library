@@ -173,7 +173,7 @@ class MediaPluginIntent : Intent {
      * @return A response intent.
      */
     @JvmOverloads
-    fun createResultIntent(propertyData: PropertyData?, extraData: ExtraData? = null): MediaPluginIntent {
+    fun createResultIntent(propertyData: PropertyData? = null, extraData: ExtraData? = null): MediaPluginIntent {
         val returnIntent = MediaPluginIntent()
         if (srcClass != null && srcClass != null)
             returnIntent.setClassName(srcPackage!!, srcClass!!)
