@@ -5,9 +5,9 @@ package com.wa2c.android.medoly.library
  */
 object MedolyEnvironment {
     /** Medoly package.  */
-    var MEDOLY_PACKAGE = "com.wa2c.android.medoly"
+    const val MEDOLY_PACKAGE = "com.wa2c.android.medoly"
     /** Medoly library package.  */
-    var MEDOLY_LIBRARY_PACKAGE = "com.wa2c.android.medoly.library"
+    const val MEDOLY_LIBRARY_PACKAGE = "com.wa2c.android.medoly.library"
     /** Medoly plugin package.  */
-    var MEDOLY_PLUGIN_PACKAGE = "com.wa2c.android.medoly.plugin"
+    const val MEDOLY_PLUGIN_PACKAGE = "com.wa2c.android.medoly.plugin"
 }

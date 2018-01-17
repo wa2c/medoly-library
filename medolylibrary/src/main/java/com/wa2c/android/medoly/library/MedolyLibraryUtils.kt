@@ -12,6 +12,7 @@ object MedolyLibraryUtils {
      * @param keyName A key name.
      * @return The property.
      */
+    @JvmStatic
     fun getKeyProperty(keyName: String): IProperty? {
         var p: IProperty? = MediaProperty.valueOfKey(keyName)
         if (p == null) p = AlbumArtProperty.valueOfKey(keyName)
@@ -26,6 +27,7 @@ object MedolyLibraryUtils {
      * @param p A property.
      * @return The property type label.
      */
+    @JvmStatic
     fun getPropertyTypeLabel(context: Context, p: IProperty): String {
         return when (p) {
             is MediaProperty -> context.getString(R.string.media)
