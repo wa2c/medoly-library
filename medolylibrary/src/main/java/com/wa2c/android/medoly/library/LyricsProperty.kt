@@ -1,8 +1,7 @@
 package com.wa2c.android.medoly.library
 
 import android.content.Context
-
-import java.util.HashMap
+import java.util.*
 
 /**
  * Lyrics properties.

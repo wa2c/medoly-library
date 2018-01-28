@@ -1,7 +1,6 @@
 package com.wa2c.android.medoly.library
 
-import java.util.ArrayList
-import java.util.LinkedHashMap
+import java.util.*
 
 /**
  * Property data.
@@ -26,17 +25,6 @@ open class ExtraData : LinkedHashMap<String?, MutableList<String?>?> {
     constructor(propertyData: Map<String, MutableList<String?>?>) : super(propertyData)
 
 
-//    /**
-//     * Returns true if this map contains a mapping for the specified key.
-//     * @param key A property key.
-//     * @return true if this map contains a mapping for the specified key.
-//     */
-//    fun containsKey(key: Any?): Boolean {
-//        return if (key is String?)
-//            super.containsKey(key)
-//        else
-//            false
-//    }
 
     /**
      * Returns true if this map maps one or more keys to the specified value.
@@ -44,9 +32,7 @@ open class ExtraData : LinkedHashMap<String?, MutableList<String?>?> {
      * @return true if this map maps one or more keys to the specified value.
      */
     fun containsValue(value: String?): Boolean {
-        val list = ArrayList<String?>()
-        list.add(value)
-        return containsValue(list)
+        return containsValue(mutableListOf(value))
     }
 
     /**
@@ -105,17 +91,31 @@ open class ExtraData : LinkedHashMap<String?, MutableList<String?>?> {
         return builder.substring(0, builder.length - sep.length)
     }
 
+    /**
+     * Set the new property value list. (indexed access operator)
+     * @param key A property key.
+     * @param value The property value.
+     */
+    operator fun set(key: String?, value: MutableList<String?>?): MutableList<String?>? {
+        return put(key, value)
+    }
 
+    /**
+     * Set the new property value list. (indexed access operator)
+     * @param key A property key.
+     * @param value The property value.
+     */
+    operator fun set(key: String?, value: String?): MutableList<String?>? {
+        return put(key, value)
+    }
 
     /**
      * Put the new property value.
      * @param key A property key.
      * @param value The property value.
      */
-    fun put(key: String?, value: String?): List<String?>? {
-        val list = ArrayList<String?>()
-        list.add(value)
-        return super.put(key, list)
+    fun put(key: String?, value: String?): MutableList<String?>? {
+        return super.put(key, mutableListOf(value))
     }
 
     /**
@@ -124,10 +124,10 @@ open class ExtraData : LinkedHashMap<String?, MutableList<String?>?> {
      * @param value The property value.
      */
     fun insertFirst(key: String?, value: String?) {
-        var list: MutableList<String?>? = get(key)
+        var list = get(key)
         if (list == null) {
-            list = ArrayList()
-            super.put(key, list)
+            list = mutableListOf()
+            this[key] = list
         }
         list.add(0, value)
     }
@@ -138,10 +138,10 @@ open class ExtraData : LinkedHashMap<String?, MutableList<String?>?> {
      * @param value The property value.
      */
     fun insertLast(key: String?, value: String?) {
-        var list: MutableList<String?>? = get(key)
+        var list = get(key)
         if (list == null) {
-            list = ArrayList()
-            super.put(key, list)
+            list = mutableListOf()
+            this[key] = list
         }
         list.add(value)
     }
@@ -156,12 +156,11 @@ open class ExtraData : LinkedHashMap<String?, MutableList<String?>?> {
             return false
 
         try {
-            val map = other as Map<*, *>?
-            if (map!!.size != this.size)
+            val map = other as Map<*, MutableList<String?>?>?
+            if (map == null || map.size != this.size)
                 return false
             for (key in this.keys) {
-                val value  = map[key] as List<String?>?
-                if (!this.equals(key, value))
+                if (!this.equals(key, map[key]))
                     return false
             }
         } catch (e: RuntimeException) {
@@ -177,7 +176,7 @@ open class ExtraData : LinkedHashMap<String?, MutableList<String?>?> {
      * @param list A key value list.
      * @return true if the specified object is equal to this map.
      */
-    fun equals(key: String?, list: List<String?>?): Boolean {
+    fun equals(key: String?, list: MutableList<String?>?): Boolean {
         if (!this.containsKey(key))
             return false
 

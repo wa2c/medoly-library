@@ -159,6 +159,22 @@ class PropertyDataTest {
             }
         })
 
+        propertyData[MediaProperty.ENGINEER] = object : ArrayList<String?>() {
+            init {
+                add("Engineer1")
+                add("Engineer2")
+            }
+        }
+        assertFalse(propertyData.isEmpty(MediaProperty.ENGINEER))
+        assertTrue(propertyData[MediaProperty.ENGINEER] == object : ArrayList<String?>() {
+            init {
+                add("Engineer1")
+                add("Engineer2")
+            }
+        })
+
+
+
         propertyData.put(MediaProperty.COPYRIGHT.keyName, object : ArrayList<String?>() {
             init {
                 add("Copyright1")
@@ -173,6 +189,22 @@ class PropertyDataTest {
             }
         })
 
+        propertyData[MediaProperty.RECORD_LABEL.keyName] = object : ArrayList<String?>() {
+            init {
+                add("RecordLabel1")
+                add("RecordLabel2")
+            }
+        }
+        assertFalse(propertyData.isEmpty(MediaProperty.RECORD_LABEL))
+        assertTrue(propertyData[MediaProperty.RECORD_LABEL] == object : ArrayList<String?>() {
+            init {
+                add("RecordLabel1")
+                add("RecordLabel2")
+            }
+        })
+
+
+
         propertyData.put(MediaProperty.ORIGINAL_ARTIST, "OriginalArtist1")
         assertFalse(propertyData.isEmpty(MediaProperty.ORIGINAL_ARTIST))
         assertTrue(propertyData[MediaProperty.ORIGINAL_ARTIST] == object : ArrayList<String?>() {
@@ -181,11 +213,29 @@ class PropertyDataTest {
             }
         })
 
+        propertyData[MediaProperty.ORIGINAL_LYRICIST] = "OriginalLyricist1"
+        assertFalse(propertyData.isEmpty(MediaProperty.ORIGINAL_LYRICIST))
+        assertTrue(propertyData[MediaProperty.ORIGINAL_LYRICIST] == object : ArrayList<String?>() {
+            init {
+                add("OriginalLyricist1")
+            }
+        })
+
+
+
         propertyData.put(MediaProperty.ORIGINAL_ALBUM.keyName, "OriginalAlbum1")
         assertFalse(propertyData.isEmpty(MediaProperty.ORIGINAL_ALBUM))
         assertTrue(propertyData[MediaProperty.ORIGINAL_ALBUM] == object : ArrayList<String?>() {
             init {
                 add("OriginalAlbum1")
+            }
+        })
+
+        propertyData[MediaProperty.ORIGINAL_YEAR .keyName] = "OriginalYear1"
+        assertFalse(propertyData.isEmpty(MediaProperty.ORIGINAL_YEAR))
+        assertTrue(propertyData[MediaProperty.ORIGINAL_YEAR] == object : ArrayList<String?>() {
+            init {
+                add("OriginalYear1")
             }
         })
     }
