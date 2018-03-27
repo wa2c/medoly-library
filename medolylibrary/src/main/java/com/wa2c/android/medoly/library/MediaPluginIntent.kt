@@ -26,12 +26,13 @@ class MediaPluginIntent : Intent {
     var propertyData: PropertyData?
         get() {
             val keyArray = this.getStringArrayExtra(PLUGIN_PROPERTY_KEY_ARRAY)
-            val valueArray = this.getSerializableExtra(PLUGIN_PROPERTY_VALUE_ARRAY) as Array<MutableList<String?>?>?
+            //val valueArray = this.getSerializableExtra(PLUGIN_PROPERTY_VALUE_ARRAY) as Array<MutableList<String?>?>?
+            val valueArray = this.getSerializableExtra(PLUGIN_PROPERTY_VALUE_ARRAY) as Array<Object?>?
             if (keyArray == null || valueArray == null || keyArray.size != valueArray.size)
                 return null
             val data = PropertyData(keyArray.size)
             for (i in keyArray.indices) {
-                data.put(keyArray[i], valueArray[i])
+                data.put(keyArray[i], valueArray[i] as MutableList<String?>?)
             }
             return data
         }
@@ -46,12 +47,13 @@ class MediaPluginIntent : Intent {
     var extraData: ExtraData?
         get() {
             val keyArray = this.getStringArrayExtra(PLUGIN_EXTRA_KEY_ARRAY)
-            val valueArray = this.getSerializableExtra(PLUGIN_EXTRA_VALUE_ARRAY) as Array<MutableList<String?>?>?
+            //val valueArray = this.getSerializableExtra(PLUGIN_EXTRA_VALUE_ARRAY) as Array<MutableList<String?>?>?
+            val valueArray = this.getSerializableExtra(PLUGIN_EXTRA_VALUE_ARRAY) as Array<Object?>?
             if (keyArray == null || valueArray == null || keyArray.size != valueArray.size)
                 return null
             val data = ExtraData(keyArray.size)
             for (i in keyArray.indices) {
-                data.put(keyArray[i], valueArray[i])
+                data.put(keyArray[i], valueArray[i] as MutableList<String?>?)
             }
             return data
         }

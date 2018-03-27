@@ -190,7 +190,8 @@ enum class MediaProperty constructor(override val nameId: Int) : IProperty {
 
 
     /** Property key name  */
-    override val keyName by lazy { KEY_PREFIX + "_" + this.name }
+    override val keyName: String
+        get()  = KEY_PREFIX + "_" + this.name
 
     /** Get the property name.  */
     override fun getName(context: Context): String {
