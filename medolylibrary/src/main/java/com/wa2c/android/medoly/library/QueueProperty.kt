@@ -35,7 +35,7 @@ enum class QueueProperty constructor(override val nameId: Int) : IProperty {
 
     companion object {
         /** Prefix to property key name.  */
-        val KEY_PREFIX = "QUEUE"
+        const val KEY_PREFIX = "QUEUE"
 
         /**
          * Map of a key name and a property.

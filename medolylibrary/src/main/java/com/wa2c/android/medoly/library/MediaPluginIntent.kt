@@ -196,26 +196,26 @@ class MediaPluginIntent : Intent {
     companion object {
 
         /** Action ID key.  */
-        private val PLUGIN_ACTION_ID = "action_id"
+        private const val PLUGIN_ACTION_ID = "action_id"
         /** Action label key.  */
-        private val PLUGIN_ACTION_LABEL = "action_label"
+        private const val PLUGIN_ACTION_LABEL = "action_label"
         /** Action priority.  */
-        private val PLUGIN_ACTION_PRIORITY = "action_priority"
+        private const val PLUGIN_ACTION_PRIORITY = "action_priority"
         /** Is automatically.  */
-        private val PLUGIN_IS_AUTOMATICALLY = "is_automatically"
+        private const val PLUGIN_IS_AUTOMATICALLY = "is_automatically"
         /** Source package name.  */
-        private val PLUGIN_SRC_PACKAGE = "src_package"
+        private const val PLUGIN_SRC_PACKAGE = "src_package"
         /** Source class name.  */
-        private val PLUGIN_SRC_CLASS = "src_class"
+        private const val PLUGIN_SRC_CLASS = "src_class"
 
         /** Property key array key.  */
-        private val PLUGIN_PROPERTY_KEY_ARRAY = "property_key_array"
+        private const val PLUGIN_PROPERTY_KEY_ARRAY = "property_key_array"
         /** Property value array key.  */
-        private val PLUGIN_PROPERTY_VALUE_ARRAY = "property_value_array"
+        private const val PLUGIN_PROPERTY_VALUE_ARRAY = "property_value_array"
         /** Extra key array key.  */
-        private val PLUGIN_EXTRA_KEY_ARRAY = "extra_key_array"
+        private const val PLUGIN_EXTRA_KEY_ARRAY = "extra_key_array"
         /** Extra value array key.  */
-        private val PLUGIN_EXTRA_VALUE_ARRAY = "extra_value_array"
+        private const val PLUGIN_EXTRA_VALUE_ARRAY = "extra_value_array"
     }
 
 }

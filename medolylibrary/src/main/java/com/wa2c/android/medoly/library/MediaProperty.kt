@@ -200,7 +200,7 @@ enum class MediaProperty constructor(override val nameId: Int) : IProperty {
 
     companion object {
         /** Prefix to property key name.  */
-        val KEY_PREFIX = "MEDIA"
+        const val KEY_PREFIX = "MEDIA"
 
         /**
          * Map of a key name and a property.
