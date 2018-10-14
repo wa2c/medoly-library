@@ -13,26 +13,26 @@ Run gradle build to build.
 Add followings to build.gradle.
 
     repositories {
-        maven { url 'https://api.bitbucket.org/1.0/repositories/wa2c/medoly-library/raw/master/repository/' }
+        maven { url 'https://github.com/wa2c/medoly-library/raw/master/repository/' }
     }
 
     dependencies {
-        `compile 'com.wa2c.android:medolylibrary:1.2.0'`
+        `compile 'com.wa2c.android:medolylibrary:1.2.4'`
     }
 
 ## Sample
 
 See following projects.
 
-* [Medoly Last.fm Plugin](https://bitbucket.org/wa2c/medoly-last.fm-scrobbler-plugin)
-* [Medoly Twitter Plugin](https://bitbucket.org/wa2c/medoly-twitter-plugin)
-* [Medoly Lyrics Scraper Plugin](https://bitbucket.org/wa2c/medoly-lyrics-scraper-plugin)
-* [Medoly LRC Lyrics Plugin](https://bitbucket.org/wa2c/medoly-lrc-lyrics-plugin)
+* [Medoly Last.fm Plugin](https://github.com/wa2c/medoly-lastfm-plugin)
+* [Medoly Twitter Plugin](https://github.com/wa2c/medoly-twitter-plugin)
+* [Medoly Lyrics Scraper Plugin](https://github.com/wa2c/medoly-lyrics-scraper-plugin)
+* [Medoly LRC Lyrics Plugin](https://github.com/wa2c/medoly-lrc-lyrics-plugin)
 
 ## Licence
 
-[MIT](https://bitbucket.org/wa2c/medoly-library/raw/517df9165aa19fe335046be0611d58ca135ff37a/LICENSE.txt)
+[MIT](https://raw.githubusercontent.com/wa2c/medoly-library/master/LICENSE.txt)
 
 ## Author
 
-[wa2c](https://bitbucket.org/wa2c/)
+[wa2c](https://github.com/wa2c)
