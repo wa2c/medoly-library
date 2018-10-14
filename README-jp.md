@@ -1,16 +1,16 @@
 Medoly Library
 ==============
 
-This is  a library for [Medoly](https://play.google.com/store/apps/details?id=com.wa2c.android.medoly) plugins development.  
-This provides plugin interfaces and common classes.
+本プログラムは、[Medoly](https://play.google.com/store/apps/details?id=com.wa2c.android.medoly)のプラグイン開発向けライブラリです。  
+プラグイン用インターフェースや共通クラスを提供します。
 
-## Building
+## ビルド
 
-Run gradle build to build. 
+Gradleを実行してください。
 
-## Usage
+## 使い方
 
-Add followings to build.gradle.
+次の記述をbuild.gradleファイルに追加してください。
 
 ```gradle
     repositories {
@@ -22,19 +22,19 @@ Add followings to build.gradle.
     }
 ```
 
-## Sample
+## サンプル
 
-See following projects.
+次のプロジェクトを参考にしてください。
 
 * [Medoly Last.fm Plugin](https://github.com/wa2c/medoly-lastfm-plugin)
 * [Medoly Twitter Plugin](https://github.com/wa2c/medoly-twitter-plugin)
 * [Medoly Lyrics Scraper Plugin](https://github.com/wa2c/medoly-lyrics-scraper-plugin)
 * [Medoly LRC Lyrics Plugin](https://github.com/wa2c/medoly-lrc-lyrics-plugin)
 
-## Licence
+## ライセンス
 
 [MIT](https://raw.githubusercontent.com/wa2c/medoly-library/master/LICENSE.txt)
 
-## Author
+## 作者
 
 [wa2c](https://github.com/wa2c)
