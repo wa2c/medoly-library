@@ -173,7 +173,11 @@ enum class MediaProperty constructor(override val nameId: Int) : IProperty {
     MIME_TYPE(R.string.mime_type),
     /** Folder path.  */
     FOLDER_PATH(R.string.folder_path),
-    /** File name.  */
+    /** File base name. */
+    FILE_NAME_BASE(R.string.file_name_base),
+    /** File name extension. */
+    FILE_NAME_EXT(R.string.file_name_ext),
+    /** File name. */
     FILE_NAME(R.string.file_name),
     /** Data size.  */
     DATA_SIZE(R.string.data_size),

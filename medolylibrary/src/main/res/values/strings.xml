@@ -14,6 +14,8 @@
     <string name="source_uri">Source URI</string>
     <string name="mime_type">MIME Type</string>
     <string name="folder_path">Folder Path</string>
+    <string name="file_name_base">File Base Name</string>
+    <string name="file_name_ext">File Extension</string>
     <string name="file_name">File Name</string>
     <string name="data_size">Data Size</string>
     <string name="last_modified">Last Modified</string>

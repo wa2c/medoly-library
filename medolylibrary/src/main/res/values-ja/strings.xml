@@ -14,6 +14,8 @@
     <string name="source_uri">取得元URI</string>
     <string name="mime_type">MIMEタイプ</string>
     <string name="folder_path">フォルダパス</string>
+    <string name="file_name_base">ファイル基底名</string>
+    <string name="file_name_ext">ファイル拡張子</string>
     <string name="file_name">ファイル名</string>
     <string name="data_size">データサイズ</string>
     <string name="last_modified">更新日時</string>
