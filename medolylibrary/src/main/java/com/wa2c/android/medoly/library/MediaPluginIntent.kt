@@ -32,7 +32,7 @@ class MediaPluginIntent : Intent {
                 return null
             val data = PropertyData(keyArray.size)
             for (i in keyArray.indices) {
-                data.put(keyArray[i], valueArray[i] as MutableList<String?>?)
+                data[keyArray[i]] = valueArray[i] as MutableList<String?>?
             }
             return data
         }
@@ -53,7 +53,7 @@ class MediaPluginIntent : Intent {
                 return null
             val data = ExtraData(keyArray.size)
             for (i in keyArray.indices) {
-                data.put(keyArray[i], valueArray[i] as MutableList<String?>?)
+                data[keyArray[i]] = valueArray[i] as MutableList<String?>?
             }
             return data
         }

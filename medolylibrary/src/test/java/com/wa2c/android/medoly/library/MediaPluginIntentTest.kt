@@ -1,21 +1,12 @@
 package com.wa2c.android.medoly.library
 
 import org.junit.After
+import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
-
-import java.util.ArrayList
-import java.util.Locale
-
-import org.junit.Assert.assertEquals
-import org.junit.Assert.assertFalse
-import org.junit.Assert.assertNull
-import org.junit.Assert.assertTrue
-import org.robolectric.Robolectric
-import org.robolectric.RuntimeEnvironment
-import org.robolectric.annotation.Config
+import java.util.*
 
 /**
  * Media action plugin intent test.
@@ -127,7 +118,7 @@ class MediaPluginIntentTest {
     @Throws(Exception::class)
     fun setPropertyData() {
         val data = PropertyData()
-        data.put(MediaProperty.TITLE, "aaa")
+        data[MediaProperty.TITLE] = "aaa"
         eventActionIntent.propertyData = data
         assertEquals(eventActionIntent.propertyData, data)
     }
@@ -143,7 +134,7 @@ class MediaPluginIntentTest {
     @Throws(Exception::class)
     fun setExtraData() {
         val data = ExtraData()
-        data.put("abc", "def")
+        data["abc"] = "def"
         eventActionIntent.extraData = data
         assertEquals(eventActionIntent.extraData, data)
     }

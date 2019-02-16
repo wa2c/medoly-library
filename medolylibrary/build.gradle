@@ -34,7 +34,7 @@ dependencies {
     })
     //compile 'com.android.support:appcompat-v7:25.3.1'
     testImplementation 'junit:junit:4.12'
-    testImplementation 'org.robolectric:robolectric:3.3.2'
+    testImplementation 'org.robolectric:robolectric:3.7.1'
 }
 repositories {
     mavenCentral()

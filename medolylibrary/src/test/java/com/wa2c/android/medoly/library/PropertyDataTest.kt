@@ -1,20 +1,16 @@
 package com.wa2c.android.medoly.library
 
 import android.net.Uri
-
 import org.junit.After
+import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
-
-import java.util.ArrayList
-import java.util.HashMap
-
-import org.junit.Assert.*
+import java.util.*
 
 
 class PropertyDataTest {
 
-    lateinit var propertyData: PropertyData
+    private lateinit var propertyData: PropertyData
 
     @Before
     @Throws(Exception::class)
@@ -153,12 +149,12 @@ class PropertyDataTest {
     @Test
     @Throws(Exception::class)
     fun put() {
-        propertyData.put(MediaProperty.PRODUCER, object : ArrayList<String?>() {
+        propertyData[MediaProperty.PRODUCER] = object : ArrayList<String?>() {
             init {
                 add("Producer1")
                 add("Producer2")
             }
-        })
+        }
         assertFalse(propertyData.isEmpty(MediaProperty.PRODUCER))
         assertTrue(propertyData[MediaProperty.PRODUCER] == object : ArrayList<String?>() {
             init {
@@ -183,12 +179,12 @@ class PropertyDataTest {
 
 
 
-        propertyData.put(MediaProperty.COPYRIGHT.keyName, object : ArrayList<String?>() {
+        propertyData[MediaProperty.COPYRIGHT.keyName] = object : ArrayList<String?>() {
             init {
                 add("Copyright1")
                 add("Copyright2")
             }
-        })
+        }
         assertFalse(propertyData.isEmpty(MediaProperty.COPYRIGHT))
         assertTrue(propertyData[MediaProperty.COPYRIGHT] == object : ArrayList<String?>() {
             init {
@@ -213,7 +209,7 @@ class PropertyDataTest {
 
 
 
-        propertyData.put(MediaProperty.ORIGINAL_ARTIST, "OriginalArtist1")
+        propertyData[MediaProperty.ORIGINAL_ARTIST] = "OriginalArtist1"
         assertFalse(propertyData.isEmpty(MediaProperty.ORIGINAL_ARTIST))
         assertTrue(propertyData[MediaProperty.ORIGINAL_ARTIST] == object : ArrayList<String?>() {
             init {
@@ -231,7 +227,7 @@ class PropertyDataTest {
 
 
 
-        propertyData.put(MediaProperty.ORIGINAL_ALBUM.keyName, "OriginalAlbum1")
+        propertyData[MediaProperty.ORIGINAL_ALBUM.keyName] = "OriginalAlbum1"
         assertFalse(propertyData.isEmpty(MediaProperty.ORIGINAL_ALBUM))
         assertTrue(propertyData[MediaProperty.ORIGINAL_ALBUM] == object : ArrayList<String?>() {
             init {
@@ -349,7 +345,7 @@ class PropertyDataTest {
         assertFalse(propertyData.equals(MediaProperty.ARRANGER, ArrayList()))
         assertFalse(propertyData.equals(MediaProperty.ARRANGER, null))
 
-        val map = object : HashMap<String?, List<String?>?>() {
+        val map = object : HashMap<String, MutableList<String?>?>() {
             init {
                 put(MediaProperty.TITLE.keyName, object : ArrayList<String?>() {
                     init {
@@ -380,6 +376,10 @@ class PropertyDataTest {
             }
         }
         assertTrue(propertyData.equals(map))
+
+        val copyData = PropertyData(map)
+        assertEquals(propertyData, copyData)
+        assertFalse(propertyData === copyData)
     }
 
     @Test
