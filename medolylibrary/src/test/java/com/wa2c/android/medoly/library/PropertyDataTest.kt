@@ -59,6 +59,14 @@ class PropertyDataTest {
 
     @Test
     @Throws(Exception::class)
+    fun copyConstructor() {
+        val copyData = PropertyData(propertyData)
+        assertTrue(propertyData == copyData)
+        assertFalse(propertyData === copyData)
+    }
+
+    @Test
+    @Throws(Exception::class)
     fun containsKey() {
         assertTrue(propertyData.containsKey(MediaProperty.TITLE))
         assertTrue(propertyData.containsKey(MediaProperty.TITLE.keyName))

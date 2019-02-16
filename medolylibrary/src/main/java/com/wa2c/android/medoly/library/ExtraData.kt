@@ -24,6 +24,11 @@ open class ExtraData : LinkedHashMap<String?, MutableList<String?>?> {
      */
     constructor(propertyData: Map<String, MutableList<String?>?>) : super(propertyData)
 
+    /**
+     * Copy constructor.
+     * @param propertyData A extra data.
+     */
+    constructor(propertyData: PropertyData) : super(propertyData)
 
 
     /**

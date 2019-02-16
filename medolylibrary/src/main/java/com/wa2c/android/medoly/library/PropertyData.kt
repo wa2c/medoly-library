@@ -24,6 +24,11 @@ open class PropertyData : ExtraData {
      */
     constructor(propertyData: Map<String, MutableList<String?>?>) : super(propertyData)
 
+    /**
+     * Copy constructor.
+     * @param propertyData A property data.
+     */
+    constructor(propertyData: PropertyData) : super(propertyData)
 
 
     /**
