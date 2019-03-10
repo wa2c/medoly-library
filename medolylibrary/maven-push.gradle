@@ -1,4 +1,4 @@
-def versionName = "1.2.5"
+def versionName = "1.2.6"
 def repo = new File(rootDir, "repository")
 
 apply plugin: 'maven'

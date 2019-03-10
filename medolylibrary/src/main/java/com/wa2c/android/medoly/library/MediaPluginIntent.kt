@@ -178,7 +178,7 @@ class MediaPluginIntent : Intent {
     fun createResultIntent(propertyData: PropertyData? = null, extraData: ExtraData? = null): MediaPluginIntent {
         val returnIntent = MediaPluginIntent()
         if (srcClass != null && srcClass != null)
-            returnIntent.setClassName(srcPackage!!, srcClass!!)
+            returnIntent.setClassName(srcPackage, srcClass)
         else if (srcPackage != null)
             returnIntent.`package` = srcPackage
         if (propertyData != null)
