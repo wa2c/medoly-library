@@ -5,6 +5,7 @@ import android.content.Intent
 /**
  * Media action plugin intent.
  */
+@Suppress("UNCHECKED_CAST")
 class MediaPluginIntent : Intent {
 
     /**
@@ -26,8 +27,7 @@ class MediaPluginIntent : Intent {
     var propertyData: PropertyData?
         get() {
             val keyArray = this.getStringArrayExtra(PLUGIN_PROPERTY_KEY_ARRAY)
-            //val valueArray = this.getSerializableExtra(PLUGIN_PROPERTY_VALUE_ARRAY) as Array<MutableList<String?>?>?
-            val valueArray = this.getSerializableExtra(PLUGIN_PROPERTY_VALUE_ARRAY) as Array<Object?>?
+            val valueArray = this.getSerializableExtra(PLUGIN_PROPERTY_VALUE_ARRAY) as Array<Any?>?
             if (keyArray == null || valueArray == null || keyArray.size != valueArray.size)
                 return null
             val data = PropertyData(keyArray.size)
@@ -48,7 +48,7 @@ class MediaPluginIntent : Intent {
         get() {
             val keyArray = this.getStringArrayExtra(PLUGIN_EXTRA_KEY_ARRAY)
             //val valueArray = this.getSerializableExtra(PLUGIN_EXTRA_VALUE_ARRAY) as Array<MutableList<String?>?>?
-            val valueArray = this.getSerializableExtra(PLUGIN_EXTRA_VALUE_ARRAY) as Array<Object?>?
+            val valueArray = this.getSerializableExtra(PLUGIN_EXTRA_VALUE_ARRAY) as Array<Any?>?
             if (keyArray == null || valueArray == null || keyArray.size != valueArray.size)
                 return null
             val data = ExtraData(keyArray.size)
@@ -178,7 +178,7 @@ class MediaPluginIntent : Intent {
     fun createResultIntent(propertyData: PropertyData? = null, extraData: ExtraData? = null): MediaPluginIntent {
         val returnIntent = MediaPluginIntent()
         if (srcClass != null && srcClass != null)
-            returnIntent.setClassName(srcPackage, srcClass)
+            returnIntent.setClassName(srcPackage!!, srcClass!!)
         else if (srcPackage != null)
             returnIntent.`package` = srcPackage
         if (propertyData != null)

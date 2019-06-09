@@ -156,6 +156,7 @@ open class ExtraData : LinkedHashMap<String?, MutableList<String?>?> {
      * Compares the specified obj with this map for equality.
      * @return true if the specified obj is equal to this map.
      */
+    @Suppress("UNCHECKED_CAST")
     override fun equals(other: Any?): Boolean {
         if (other == null || other !is Map<*, *>?)
             return false
