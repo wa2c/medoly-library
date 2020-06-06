@@ -169,6 +169,8 @@
 
     <!-- Plugin -->
     <string name="label_plugin_operation_execute">Execute Action</string>
+    <string name="label_plugin_operation_app_launch">App Launch</string>
+    <string name="label_plugin_operation_app_quit">App Quit</string>
     <string name="label_plugin_operation_media_open">Media Open</string>
     <string name="label_plugin_operation_media_close">Media Close</string>
     <string name="label_plugin_operation_play_start">Play Start</string>

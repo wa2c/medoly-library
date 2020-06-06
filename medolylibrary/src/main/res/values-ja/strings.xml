@@ -171,6 +171,8 @@
 
     <!-- Plugin -->
     <string name="label_plugin_operation_execute">アクション実行</string>
+    <string name="label_plugin_operation_app_launch">アプリ開始</string>
+    <string name="label_plugin_operation_app_quit">アプリ終了</string>
     <string name="label_plugin_operation_media_open">メディア開始</string>
     <string name="label_plugin_operation_media_close">メディア終了</string>
     <string name="label_plugin_operation_play_start">再生開始</string>
