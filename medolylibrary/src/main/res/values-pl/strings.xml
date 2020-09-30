@@ -23,6 +23,7 @@
     <string name="data_size">Rozmiar danych</string>
     <string name="last_modified">Data modyfikacji</string>
     <string name="data_uri">URI</string>
+    <string name="shared_uri">Udostępniony URI</string>
 
 
 

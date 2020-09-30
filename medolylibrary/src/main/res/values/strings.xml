@@ -23,7 +23,7 @@
     <string name="data_size">Data Size</string>
     <string name="last_modified">Last Modified</string>
     <string name="data_uri">URI</string>
-
+    <string name="shared_uri">Shared URI</string>
 
 
     <!-- Media Property -->

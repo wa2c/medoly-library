@@ -33,6 +33,8 @@ enum class AlbumArtProperty (override val nameId: Int) : IProperty {
     LAST_MODIFIED(R.string.last_modified),
     /** URI.  */
     DATA_URI(R.string.data_uri),
+    /** Shared URI */
+    SHARED_URI(R.string.shared_uri),
 
     /** Source name.  */
     SOURCE_TITLE(R.string.source_title),

@@ -187,7 +187,7 @@ class MediaPluginIntent : Intent {
             returnIntent.extraData = extraData
         returnIntent.actionId = actionId
         returnIntent.actionLabel = actionLabel
-        returnIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
+        returnIntent.flags = FLAG_ACTIVITY_NEW_TASK or FLAG_GRANT_READ_URI_PERMISSION or FLAG_GRANT_WRITE_URI_PERMISSION
         return returnIntent
     }
 

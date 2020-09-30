@@ -23,6 +23,7 @@
     <string name="data_size">データサイズ</string>
     <string name="last_modified">更新日時</string>
     <string name="data_uri">URI</string>
+    <string name="shared_uri">共有URI</string>
 
 
 

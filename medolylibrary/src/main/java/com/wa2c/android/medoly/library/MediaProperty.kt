@@ -185,6 +185,8 @@ enum class MediaProperty constructor(override val nameId: Int) : IProperty {
     LAST_MODIFIED(R.string.last_modified),
     /** URI.  */
     DATA_URI(R.string.data_uri),
+    /** Shared URI */
+    SHARED_URI(R.string.shared_uri),
 
     /** Source title.  */
     SOURCE_TITLE(R.string.source_title),
@@ -211,7 +213,7 @@ enum class MediaProperty constructor(override val nameId: Int) : IProperty {
          */
         private val keyPropertyMap = object : HashMap<String, MediaProperty>() {
             init {
-                for (p in MediaProperty.values()) {
+                for (p in values()) {
                     put(p.keyName, p)
                 }
             }
