@@ -233,4 +233,8 @@ open class PropertyData : ExtraData {
     val isLyricsEmpty: Boolean
         get() = this.getFirst(LyricsProperty.RESOURCE_TYPE).isNullOrEmpty()
 
+    companion object {
+        val EMPTY = PropertyData()
+    }
+
 }

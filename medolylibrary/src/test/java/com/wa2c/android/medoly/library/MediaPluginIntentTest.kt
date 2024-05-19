@@ -223,8 +223,8 @@ class MediaPluginIntentTest {
     @Throws(Exception::class)
     fun createIntent() {
         val returnIntent1 = eventActionIntent.createResultIntent(propertyData)
-        assertEquals(returnIntent1.component.packageName, eventActionIntent.srcPackage)
-        assertEquals(returnIntent1.component.className, eventActionIntent.srcClass)
+        assertEquals(returnIntent1.component?.packageName, eventActionIntent.srcPackage)
+        assertEquals(returnIntent1.component?.className, eventActionIntent.srcClass)
         assertEquals(returnIntent1.propertyData, propertyData)
         assertEquals(returnIntent1.actionId, eventActionIntent.actionId)
         assertEquals(returnIntent1.actionLabel, eventActionIntent.actionLabel)

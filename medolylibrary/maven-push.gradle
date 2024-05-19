@@ -1,15 +1,18 @@
 def versionName = "1.3.1"
 def repo = new File(rootDir, "repository")
 
-apply plugin: 'maven'
+apply plugin: 'maven-publish'
 
-uploadArchives {
+publishing {
     repositories {
-        mavenDeployer {
-            repository url: "file://${repo.absolutePath}"
-            pom.version = "${versionName}"
-            pom.groupId = 'com.wa2c.android'
-            pom.artifactId = 'medolylibrary'
+//        mavenDeployer {
+//            repository url: "file://${repo.absolutePath}"
+//            pom.version = "${versionName}"
+//            pom.groupId = 'com.wa2c.android'
+//            pom.artifactId = 'medolylibrary'
+//        }
+        maven {
+            url = uri("file://${repo.absolutePath}")
         }
     }
 }
