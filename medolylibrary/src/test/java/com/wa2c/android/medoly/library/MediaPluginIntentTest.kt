@@ -88,17 +88,6 @@ class MediaPluginIntentTest {
         executionActionIntent.srcClass = "Receiver"
         executionActionIntent.putExtra("execute_id_test", "execute_id_test")
         executionActionIntent.setClassName(MedolyEnvironment.MEDOLY_PLUGIN_PACKAGE, "Test") // explicit intent
-
-        //        Parcel p = Parcel.obtain();
-        //        extraData.writeToParcel(p, 0);
-        //
-        //        ExtraData dd = ExtraData.CREATOR.createFromParcel(p);
-        //        ExtraData d = new ExtraData(p);
-
-        val ed = eventActionIntent.extraData
-        println("")
-
-
     }
 
     @After
