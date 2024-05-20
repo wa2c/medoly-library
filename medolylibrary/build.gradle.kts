@@ -1,5 +1,3 @@
-//apply from: 'maven-push.gradle'
-
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)

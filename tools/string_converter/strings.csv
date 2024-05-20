@@ -1,0 +1,169 @@
+Component,String Resource Name,Language,,
+,,English,日本語 (Japanese),Polski (Polish)
+,,en,ja,pl
+,,,,
+Data Tytpe,media,Media,メディア,Media
+,album_art,Album Art,アルバムアート,Okładka albumu
+,lyrics,Lyrics,歌詞,Teksty (Lyrics)
+,queue,Queue,再生キュー,Kolejka odtwarzania
+,,,,
+Common Property,description,Description,説明,Opis
+,source_title,Source Name,取得元名称,Nazwa zasobu
+,source_uri,Source URI,取得元URI,Źródło URI
+,mime_type,MIME Type,MIMEタイプ,Typ MIME
+,folder_path,Folder Path,フォルダパス,Ścieżka folderu
+,file_name_base,File Base Name,ファイル基底名,Nazwa bazy pliku
+,file_name_ext,File Extension,ファイル拡張子,Rozszerzenie pliku
+,file_name,File Name,ファイル名,Nazwa pliku
+,data_size,Data Size,データサイズ,Rozmiar danych
+,last_modified,Last Modified,更新日時,Data modyfikacji
+,data_uri,URI,URI,URI
+,shared_uri,Shared URI,共有URI,Udostępniony URI
+,,,,
+Media Property,media_title,Title,タイトル,Tytuł
+,media_artist,Artist,アーティスト,Wykonawca
+,media_original_artist,Original Artist,オリジナルアーティスト,Oryginalny wykonawca
+,media_album_artist,Album Artist,アルバムアーティスト,Album wykonawcy
+,media_album,Album,アルバム,Album
+,media_original_album,Original Album,オリジナルアルバム,Oryginalny album
+,,,,
+,media_genre,Genre,ジャンル,Gatunek muzyczny
+,media_mood,Mood,ムード,Nastrój
+,media_occasion,Occasion,シーン,Okazja
+,,,,
+,media_year,Year,年,Rok
+,media_original_year,Original Year,オリジナル年,Oryginalny rok
+,,,,
+,media_composer,Composer,作曲者,Kompozytor
+,media_arranger,Arranger,編曲者,Aranżer
+,media_lyricist,Lyricist,作詞者,Liryk
+,media_original_lyricist,Original Lyricist,オリジナル作詞者,Oryginalny liryk
+,media_conductor,Conductor,指揮者,Dyrygent
+,media_producer,Producer,プロデューサ,Wydawca
+,media_engineer,Engineer,エンジニア,Projektant
+,media_encoder,Encoder,エンコーダ,Koder
+,media_mixer,Mixer,ミキサ,Mikser
+,media_djmixer,DJ Mixer,DJミキサ,Mikser DJ
+,media_remixer,Remixer,リミキサ,Remikser
+,media_copyright,Copyright,著作権,Prawa autorskie
+,media_record_label,Record Label,レーベル,Etykieta nagrania
+,,,,
+,media_media,Media,メディア,Media
+,media_disc,Disc,ディスク,Dysk
+,media_disc_total,Total Disc,ディスク合計,Dysk całkowity
+,media_track,Track,トラック,Ścieżka
+,media_track_total,Total Track,トラック合計,Ścieżka całkowita
+,,,,
+,media_comment,Comment,コメント,Komentarz
+,,,,
+,media_loop,Loop,ループ,Pętla
+,media_loop_start,Loop Start,ループ開始,Start pętli
+,media_loop_length,Loop Length,ループ長,Długość pętli
+,media_tempo,Tempo,テンポ,Tempo
+,media_bpm,BPM,BPM,BPM
+,media_fbpm,FBPM,FBPM,FBPM
+,,,,
+,media_quality,Quality,品質,Jakość
+,media_rating,Rating,レーティング,Wskaźnik
+,,,,
+,media_language,Language,言語,Język
+,media_script,Script,スクリプト,Skrypt
+,,,,
+,media_tags,Tags,タグ,Tagi
+,media_key,Key,キー,Tonacja
+,,,,
+,media_amazon_id,Amazon ID,Amazon ID,Amazon ID
+,media_catalog_no,Catalog No,カタログNo,Nr katalogowy
+,media_isrc,ISRC,ISRC,ISRC
+,,,,
+,media_url_official_release_site,Official Release Site URL,リリース情報公式URL,Oficjalny adres URL witryny wydania
+,media_url_official_artist_site,Official Artist Site URL,アーティスト公式URL,Oficjalny adres URL witryny wykonawcy
+,media_url_lyrics_site,Lyrics Site URL,歌詞サイトURL,Strona URL tekstu
+,media_url_wikipedia_release_site,Wikipedia Release Site URL,リリース情報 Wikipedia,Wikipedia - adres URL witryny wydania
+,media_url_wikipedia_artist_site,Wikipedia Artist Site URL,アーティスト Wikipedia,Wikipedia - adres URL witryny artysty
+,media_url_discogs_release_site,Discogs Release Site URL,Discogs Release Site URL,Discogs - adres URL witryny
+,media_url_discogs_artist_site,Discogs Artist Site URL,Discogs Artist Site URL,Discogs - adres URL witryny wykonawcy
+,,,,
+,media_musicbrainz_release_id,MusicBrainz Release ID,MusicBrainz Release ID,MusicBrainz - wydanie ID
+,media_musicbrainz_artist_id,MusicBrainz Artist ID,MusicBrainz Artist ID,MusicBrainz - ID artysty
+,media_musicbrainz_release_artist_id,MusicBrainz Release Artist ID,MusicBrainz Release Artist ID,MusicBrainz - wydanie ID artysty
+,media_musicbrainz_release_group_id,MusicBrainz Release Group ID,MusicBrainz Release Group ID,MusicBrainz - wydanie grupy artysty
+,media_musicbrainz_disc_id,MusicBrainz Disc ID,MusicBrainz Disc ID,MusicBrainz - ID dysku
+,media_musicbrainz_track_id,MusicBrainz Track ID,MusicBrainz Track ID,MusicBrainz - ID ścieżki
+,media_musicbrainz_work_id,MusicBrainz Work ID,MusicBrainz Work ID,MusicBrainz - ID pracy
+,media_musicbrainz_release_status,MusicBrainz Release Status,MusicBrainz Release Status,MusicBrainz - wydanie statusu
+,media_musicbrainz_release_type,MusicBrainz Release Type,MusicBrainz Release Type,MusicBrainz - typ wydania
+,media_musicbrainz_release_country,MusicBrainz Release Country,MusicBrainz Release Country,MusicBrainz - kraj wydania
+,,,,
+,media_musicip_id,MusicIP ID,MusicIP ID,MusicIP ID
+,,,,
+,media_tag_type,Tag Type,タグ種別,Typ tagu
+,media_character_encoding,Character Encoding,文字コード,Kodowanie znaków
+,media_format,Media Format,音声フォーマット,Format mediów
+,media_encoding_type,Media Codec,音声エンコード種別,Kodek mediów
+,media_bit_rate,Bit Rate,ビットレート,Bitrate
+,media_sample_rate,Sample Rate,サンプリングレート,Częstotliwość
+,media_channels,Audio Channel,音声チャンネル,Kanał audio
+,media_duration,Duration,曲の長さ,Czas trwania
+,,,,
+Album Art Property ,album_art_resource_type,Resource Type,データ種別,Typ zasobu
+,album_art_picture_type,Picture Type,イメージ種別,Typ obrazu
+,album_art_resolution,Resolution,解像度,Rozdzielczość
+,,,,
+Album Art Resource Type ,album_art_resource_internal,Internal,内蔵,Wewnętrzny
+,album_art_resource_external,External File,外部ファイル,Plik zewnętrzny
+,album_art_resource_service,External Service,外部サービス,Usługa zewnętrzna
+,album_art_resource_provider,Content Provider,コンテンツプロバイダ,Dostawca treści
+,,,,
+ Lyrics Property,lyrics_lyrics,Lyrics,歌詞,Teksty (Lyrics)
+,lyrics_resource_type,Resource Type,データ種別,Typ zasobu
+,lyrics_format_type,Format Type,フォーマット種別,Typ formatu
+,lyrics_field_name,Field Name,フィールド名,Nazwa pola
+,lyrics_sync_type,Sync Type,同期種別,Typ synchronizacji
+,lyrics_offset_time,Offset Time,オフセット時間,Czas przesunięcia
+,lyrics_character_encoding,Character Encoding,文字コード,Kodowanie znaków
+,,,,
+Lyrics Resource Type,lyrics_resource_internal,Internal,内蔵,Wewnętrzny
+,lyrics_resource_file,External File,外部ファイル,Plik zewnętrzny
+,lyrics_resource_service,External Service,外部サービス,Usługa zewnętrzna
+,,,,
+Lyrics Sync type,lyrics_sync_sync,Sync,同期歌詞,Synchronizacja
+,lyrics_sync_unsync,Unsync,非同期歌詞,Desynchronizacja
+,,,,
+Lyrics Format Type,lyrics_format_text,Plain Text,プレーンテキスト,Zwykły tekst
+,lyrics_format_lrc,LRC Format,LRCフォーマット,Format LRC
+,lyrics_format_kra,KRA Format,KRAフォーマット,Format KRA
+,lyrics_format_joyhack,JoyHack Format,JoyHackフォーマット,Format JoyHack
+,lyrics_format_srt,SRT (SubRip) Format,SRT (SubRip) フォーマット,Format SRT (SubRip)
+,lyrics_format_stl,STL (Spruce subtitle) Format,STL (Spruce subtitle) フォーマット,Format STL (Spruce subtitle)
+,lyrics_format_scc,SCC (Scenarist Closed Caption) Format,SCC (Scenarist Closed Caption) フォーマット,Format SCC (Scenarist Closed Caption)
+,lyrics_format_ass,SSA/ASS (SubStation Alpha) Format,SSA/ASS (SubStation Alpha) フォーマット,Format SSA/ASS (SubStation Alpha)
+,lyrics_format_ttml,TTML (Timed Text Markup Language) Format,TTML (Timed Text Markup Language) フォーマット,Format TTML (Timed Text Markup Language)
+,lyrics_format_lyrics,Lyrics Text,歌詞テキスト,Tekst lyricsa
+,lyrics_format_sylt,SYLT Format,SYLT フォーマット,Format SYLT
+,lyrics_format_mp3_lyrics3v1,MP3 Lyrics3 v1 Format,MP3 Lyrics3 v1 フォーマット,Format MP3 Lyrics3 v1
+,lyrics_format_mp3_lyrics3v2,MP3 Lyrics3 v2 Format,MP3 Lyrics3 v2 フォーマット,Format MP3 Lyrics3 v2
+,,,,
+Queue,queue_current_position,Current Position,再生位置,Aktualna pozycja
+,queue_current_no,Current No,再生キューNo,Aktualny nr
+,queue_total_count,Total Count,総再生曲数,Łączna liczba
+,queue_played_count,Played Count,再生済曲数,Odtwarzaj odliczając
+,queue_total_time,Total Time,総再生時間,Czas całkowity
+,queue_played_time,Played Time,再生済時間,Czas odtwarzania
+,queue_loop_count,Loop Count,ループ回数,Liczba pętli
+,,,,
+Plugin,label_plugin_operation_execute,Execute Action,アクション実行,Wykonaj polecenie
+,label_plugin_operation_app_launch,App Launch,アプリ開始,Uruchom aplikację
+,label_plugin_operation_app_quit,App Quit,アプリ終了,Zamknij aplikację
+,label_plugin_operation_media_open,Media Open,メディア開始,Otwórz media
+,label_plugin_operation_media_close,Media Close,メディア終了,Zamknij media
+,label_plugin_operation_play_start,Play Start,再生開始,Start odtwarzania
+,label_plugin_operation_play_stop,Play Stop,再生停止,Stop odtwarzania
+,label_plugin_operation_play_now,Play Now,再生中,Odtwarzaj teraz
+,label_plugin_operation_play_complete,Play Complete,再生完了,Odtwarzaj kompletnie
+,,,,
+,label_plugin_type_run,Run,実行,Uruchom
+,label_plugin_type_post_message,Post Message,メッセージ投稿,Wyślij wiadomość
+,label_plugin_type_get_property,Get Property,プロパティ取得,Uzyskaj właściwości
+,label_plugin_type_get_album_art,Get Album Art,アルバムアート取得,Uzyskaj okładkę albumu
+,label_plugin_type_get_lyrics,Get Lyrixcs,歌詞取得,Uzyskaj teksty

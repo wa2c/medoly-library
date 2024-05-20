@@ -47,7 +47,6 @@ class MediaPluginIntent : Intent {
     var extraData: ExtraData?
         get() {
             val keyArray = this.getStringArrayExtra(PLUGIN_EXTRA_KEY_ARRAY)
-            //val valueArray = this.getSerializableExtra(PLUGIN_EXTRA_VALUE_ARRAY) as Array<MutableList<String?>?>?
             val valueArray = this.getSerializableExtra(PLUGIN_EXTRA_VALUE_ARRAY) as Array<Any?>?
             if (keyArray == null || valueArray == null || keyArray.size != valueArray.size)
                 return null
