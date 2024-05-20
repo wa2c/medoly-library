@@ -1,4 +1,6 @@
 [versions]
+appVersion = "1.4.0"
+
 androidCompileSdk = "34"
 androidMinSdk = "23"
 

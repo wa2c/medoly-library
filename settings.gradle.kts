@@ -5,7 +5,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = "Medoly Library"
+rootProject.name = "MedolyLibrary"
 
 include(":app")
 include(":medolylibrary")

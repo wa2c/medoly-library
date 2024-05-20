@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.parcelize)
+    `maven-publish`
 }
 
 val applicationId: String by rootProject.extra
@@ -32,4 +33,25 @@ android {
 dependencies {
     testImplementation(libs.junit)
     testImplementation(libs.robolectric)
+}
+
+
+// Maven publish
+val repo = File(rootDir, "repository")
+val artifactId = "medolylibrary"
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.wa2c.android"
+            artifactId = artifactId
+            version = libs.versions.appVersion.get()
+            artifact("${project.layout.buildDirectory.get()}/outputs/aar/$artifactId-release.aar")
+        }
+    }
+    repositories {
+        maven {
+            name = "ProjectLocal"
+            url = uri("file://${repo.absolutePath}")
+        }
+    }
 }

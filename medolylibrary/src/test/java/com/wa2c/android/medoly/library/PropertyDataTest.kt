@@ -5,9 +5,12 @@ import org.junit.After
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
+import org.junit.runner.RunWith
+import org.robolectric.RobolectricTestRunner
 import java.util.*
 
 
+@RunWith(RobolectricTestRunner::class)
 class PropertyDataTest {
 
     private lateinit var propertyData: PropertyData
@@ -310,7 +313,7 @@ class PropertyDataTest {
     @Throws(Exception::class)
     fun getDataUri() {
         assertTrue(Uri.parse("http://localhost/test.mp3") == propertyData.mediaUri)
-        assertTrue(Uri.parse("") == propertyData.albumArtUri)
+        assertTrue(propertyData.albumArtUri == null)
         assertTrue(propertyData.lyricsUri == null)
     }
 
