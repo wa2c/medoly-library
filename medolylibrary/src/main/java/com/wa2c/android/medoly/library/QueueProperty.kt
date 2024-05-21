@@ -1,11 +1,13 @@
 package com.wa2c.android.medoly.library
 
 import android.content.Context
+import kotlinx.parcelize.Parcelize
 import java.util.*
 
 /**
  * Play queue property.
  */
+@Parcelize
 enum class QueueProperty constructor(override val nameId: Int) : IProperty {
     /** Current media position,  */
     CURRENT_POSITION(R.string.queue_current_position),

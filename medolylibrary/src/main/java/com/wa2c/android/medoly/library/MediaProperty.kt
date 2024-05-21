@@ -1,11 +1,13 @@
 package com.wa2c.android.medoly.library
 
 import android.content.Context
+import kotlinx.parcelize.Parcelize
 import java.util.*
 
 /**
  * Media property.
  */
+@Parcelize
 enum class MediaProperty constructor(override val nameId: Int) : IProperty {
     /** Title  */
     TITLE(R.string.media_title),

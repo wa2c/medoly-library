@@ -1,11 +1,13 @@
 package com.wa2c.android.medoly.library
 
 import android.content.Context
+import kotlinx.parcelize.Parcelize
 import java.util.*
 
 /**
  * Lyrics properties.
  */
+@Parcelize
 enum class LyricsProperty constructor(override val nameId: Int) : IProperty {
     /** Lyrics.  */
     LYRICS(R.string.lyrics_lyrics),

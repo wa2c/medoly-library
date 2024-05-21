@@ -1,11 +1,13 @@
 package com.wa2c.android.medoly.library
 
 import android.content.Context
+import kotlinx.parcelize.Parcelize
 import java.util.*
 
 /**
  * Album art properties.
  */
+@Parcelize
 enum class AlbumArtProperty (override val nameId: Int) : IProperty {
 
     /** Resource type.  */
